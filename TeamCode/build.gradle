@@ -13,7 +13,7 @@
 
 // Include common definitions from above.
 apply from: '../build.common.gradle'
-apply from: '../build.dependencies.gradle'
+//apply from: '../build.dependencies.gradle'
 
 android {
     namespace = 'org.firstinspires.ftc.teamcode'
@@ -24,5 +24,6 @@ android {
 }
 
 dependencies {
+    implementation 'com.github.GramGra07:GentrifiedAppsUtil:4.8.9.5'
     implementation project(':FtcRobotController')
 }
